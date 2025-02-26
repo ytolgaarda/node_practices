@@ -13,7 +13,7 @@ userController.on('succesState', (message) => {
 
 
 userController.on('failureState', (errorMessage) => {
-  console.error('Server Failure:', errorMessage);
+  console.error(errorMessage);
 });
 
 
