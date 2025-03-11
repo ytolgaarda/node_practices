@@ -1,5 +1,5 @@
 
-import {ServerFailure} from '../error/custom_erorr.js';
+import {ServerFailure} from '../error/server_failure.js';
 
 class Result {
   constructor({data, error, stackTrace}) {

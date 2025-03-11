@@ -1,12 +1,12 @@
 import {User} from '../models/user.js';
-import {ServerFailure} from '../core/error/custom_erorr.js';
-import {asyncTryCatch} from '../core/result/result.js'
-import {Result} from '../core/result/result.js'
+import {ServerFailure} from '../../core/error/server_failure.js';
+import {asyncTryCatch} from '../../core/result/result.js'
+import {Result} from '../../core/result/result.js'
 
 
 
 class UserService {
-  _userEndPoint = 'https://jsonplaceholder.typicode.com/userss';
+  _userEndPoint = 'https://jsonplaceholder.typicode.com/users';
 
 
   async fetchUserData() {

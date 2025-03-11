@@ -1,6 +1,6 @@
 import {EventEmitter} from 'events';
 import {UserService} from '../service/user_service.js';
-import {ServerFailure} from '../core/error/custom_erorr.js';
+import {ServerFailure} from '../../core/error/server_failure.js';
 
 class UserController extends EventEmitter {
   constructor() {

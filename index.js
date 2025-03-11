@@ -1,24 +1,13 @@
 
-import {User} from './models/user.js';
-import {UserService} from './service/user_service.js';
-import {UserController} from './controller/user_controller.js'
+import {FileController} from './modules/file_manager/file_controller.js';
 
 
-const userController = new UserController();
-
-
-userController.on('succesState', (message) => {
-  console.log(message);
-})
-
-
-userController.on('failureState', (errorMessage) => {
-  console.error(errorMessage);
-});
+const filePath = 'test_file.txt';
 
 
 
 
+function deleteFile() {
+  FileController.deleteFile(filePath);
 
-userController.fetchUserListData();
-
+} deleteFile();
